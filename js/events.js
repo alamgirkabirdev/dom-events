@@ -14,3 +14,21 @@ const greenButton = document.getElementById('make-green-button');
 greenButton.onclick= function(){
   document.body.style.backgroundColor= ('green');
 }
+
+// handle by using add eventlisenter 
+const goldenButton = document.getElementById('make-goldenrod');
+
+goldenButton.addEventListener('click',makeGoldenRod);
+
+function makeGoldenRod(){
+   document.body.style.backgroundColor= ('goldenrod');
+}
+// addEventlisenter
+const hotPinkButton =document.getElementById('make-hotpink');
+hotPinkButton.addEventListener('click',function(){
+     document.body.style.backgroundColor= 'hotpink';
+})
+// direct shortcut
+document.getElementById('light-blue').addEventListener('click',function(){
+    document.body.style.backgroundColor= 'lightblue';
+   })
