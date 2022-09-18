@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event summary</title>
+</head>
+<body>
+    <h2 id="mouse-header">More mouse event</h2>
+    <input id="email-field" placeholder="Email Address" type="text">
+    <button onclick="heandleClickGreen()">Click Me</button>
+    <script>
+        //1.
+        function heandleClickGreen(){
+            document.body.style.backgroundColor='green';
+        }
+        // // 2
+        // document.getElementById('email-field').addEventListener('keyup',function(event){
+        //     console.log(event.target.value);
+        // })
+        // // 3.
+        // document.getElementById('mouse-header').addEventListener('mousemove', function(){
+        //     console.log('mouse is moving ....giving me shor shore')
+        // });
+
+        // // 4.
+        // document.getElementById('mouse-header').addEventListener('mouseenter', function(){
+        //     console.log('mouse is entering ....giving me shor shore')
+        // });
+        document.getElementById('mouse-header').addEventListener('mouseout', function(){
+            console.log('mouse tomi amake chere jaio na')
+        })
+    </script>
+</body>
+</html>
